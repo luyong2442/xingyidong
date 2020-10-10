@@ -1,0 +1,4 @@
+/* pages/tijiao/tijiao.wxss */
+input{
+  letter-spacing:2px;
+}

@@ -1,0 +1,20 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="title">产品详情</view>
+<view>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<view class="title">品种介绍</view>
+<view>
+  <template is="wxParse" data="{{wxParseData:pzcon.nodes}}"/>
+</view>
+
+<view class="title">工厂介绍</view>
+<view>
+  <template is="wxParse" data="{{wxParseData:gccon.nodes}}"/>
+</view>
+
+<view class="title">产地介绍</view>
+<view>
+  <template is="wxParse" data="{{wxParseData:cdcon.nodes}}"/>
+</view>

@@ -1,0 +1,24 @@
+.left{
+  width: 3%;
+  height: 160px;
+  background-color: #eee;
+  float: left;
+   
+}
+
+.center{
+  width: 94%;
+  height: 160px;
+  float: left;
+}
+
+.center image{
+  margin-left: 10px;
+}
+
+.right{
+  width: 3%;
+  height: 160px;
+  background-color: #eee;
+  float: left;
+}

@@ -1,0 +1,26 @@
+<view class="head" style="margin-top:10px">
+  <image src="{{loginImg}}" style="width:180rpx;height:180rpx"></image>
+  <view style="font-size:14px;">全国优质大米供销资讯推送、专业营销辅导三方平台</view>
+</view>
+
+<view style="height:9px;background:#eee;width:100%;margin-top:7px"></view>
+
+<view class="head">
+  <view style="color:#666;font-size:13px;margin-top:7px;line-height:25px">粮事通平台，致力于提供全国各优质产区的优质大米加工厂资讯，对接全国各地批发商户，平台有专业招商团队，帮助加工企业开发空白区域市场，提高市场份额，平台为批发商提供各产区工厂经营详情、产品详情，平台有专业团队对产品质量进行层层把关，同时平台在全国各大城市设立专业分销团队，为批发商提供运营指导，人员培训及对产品进行深度分销，粮事通愿景在2年内成为大米行业B2B知名平台。</view>
+</view>
+<view style="height:9px;background:#eee;width:100%;margin-top:7px"></view>
+
+<view style="color:#ccc;font-size:14px;margin-top:7px;line-height:30px">
+   <view class="left" style="color:black;float:left;font-size:13px;margin-left:5px">技术支持</view>
+   <view class="right" style="color:#666;float:right;font-size:12px;margin-right:5px">长春市风行天下科技有限公司</view>
+</view>
+<view style="clear:left" ></view>
+<view style="height:1px;background:#ccc;width:100%;"></view>
+<view style="color:#ccc;font-size:14px;line-height:30px">
+   <view class="left" style="color:black;float:left;font-size:13px;margin-left:5px">联系方式</view>
+   <view class="right" style="color:#666;float:right;font-size:12px;margin-right:5px">13019133002</view>
+</view>
+
+<view style="clear:left" ></view>
+
+<view style="height:9px;background:#eee;width:100%;margin-top:7px"></view>

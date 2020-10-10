@@ -1,0 +1,77 @@
+<!--pages/list/list.wxml-->
+<view class="list-wrap">
+  <view class="menu">
+    <block >
+      <view class="item {{active1}}">
+        <view class="tit" data-index="1" bindtap="findopen1" style="font-size:12px">大米产地
+          <image src="{{ active1 == 'active' ? '/images/up.png':'/images/down.png' }}" mode="widthFix"></image>
+        </view>
+        <view class="list">
+          <view class="row" wx:for="{{area}}" data-id="{{item.id}}" bindtap="subMenuHandle">
+            <text style="font-size:12px">{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+     <block >
+      <view class="item {{active2}}">
+        <view class="tit" data-index="2" bindtap="findopen2" style="font-size:12px">工厂名称
+          <image src="{{ active2 == 'active' ? '/images/up.png':'/images/down.png' }}" mode="widthFix"></image>
+        </view>
+        <view class="list">
+          <view class="row" bindtap="subMenuHandle">
+            <!-- <text style="font-size:12px">111111111</text> -->
+            <!-- <image wx:if="{{ item2.status == true }}" src="/images/right.png" mode="widthFix"></image> -->
+          </view>
+        </view>
+      </view>
+    </block>
+
+     <block >
+      <view class="item {{active3}}">
+        <view class="tit" data-index="3" bindtap="findopen3" style="font-size:12px">大米品种
+          <image src="{{ active3 == 'active' ? '/images/up.png':'/images/down.png' }}" mode="widthFix"></image>
+        </view>
+        <view class="list">
+          <view class="row" bindtap="subMenuHandle">
+            <!-- <text style="font-size:12px">111111111</text> -->
+            <!-- <image wx:if="{{ item2.status == true }}" src="/images/right.png" mode="widthFix"></image> -->
+          </view>
+        </view>
+      </view>
+    </block>
+
+     <block >
+      <view class="item {{active4}}">
+        <view class="tit" data-index="4" bindtap="findopen4" style="font-size:12px">智能排序
+          <image src="{{ active4 == 'active' ? '/images/up.png':'/images/down.png' }}" mode="widthFix"></image>
+        </view>
+        <view class="list">
+          <view class="row" bindtap="subMenuHandle">
+            <!-- <text style="font-size:12px">111111111</text> -->
+            <!-- <image wx:if="{{ item2.status == true }}" src="/images/right.png" mode="widthFix"></image> -->
+          </view>
+        </view>
+      </view>
+    </block>
+    
+    <!-- <view wx:if="{{ current }}" class="mask" bindtap="maskHandle"></view> -->
+  </view>
+
+  <view class="list-box">
+    <view class="item" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}" bindtap="prode">
+      <view class="top">
+        <view class="tit">
+          <text style="font-size:13px">{{item.gc}}</text>
+          <span style="font-size:12px" wx:for="{{item.pzlist}}">{{item.pzid}}</span>
+        </view>
+        <view class="row"><span style="font-size:12px">浏览：{{item.viewnum}}</span></view>
+      </view>
+      <view class="user"></view>
+      <view class="img-wrap">
+        <image src="https://mc.chinanet100.net/uploads/{{item.img}}" wx:for="{{item.images}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

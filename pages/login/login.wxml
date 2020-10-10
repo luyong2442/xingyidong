@@ -1,0 +1,7 @@
+<view class="container">
+      <image class="login_img" src="{{loginImg}}" style="width:550rpx;height:550rpx"></image>
+      <view class="login_button">
+          <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">微信登录</button>
+          <button type="default" class="back" bindtap="gotoBack"> 取消 </button>
+      </view>
+</view>

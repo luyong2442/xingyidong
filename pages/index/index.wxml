@@ -1,0 +1,88 @@
+<view class="logo">
+   <view style="height:10px;background:#eee;width:100%;"></view>
+   <view class="left"></view>
+   <view class="center">
+    <view style="width:25%;float:left">
+       <image src="{{loginImg}}" style="width:180rpx;height:180rpx"></image>
+    </view>
+    <view style="width:75%;float:left">
+      <view style="float:left;font-size:13px;margin-top:10px;margin-left:5px">全国优质大米供销资质推送、专业营销辅导三方平台</view>
+      <view style="float:left;font-size:10px;margin-top:5px;margin-left:5px">服务热线：13019133002</view>
+    </view>
+
+     <view style="width:76%;float:left;margin-top:5px">
+       <image src="{{item.headimgurl}}" style="width:80rpx;height:80rpx;border-radius:30px" wx:for="{{headimg}}"></image>
+     </view>
+
+     <view style="width:24%;float:right">
+      <view style="float:left;font-size:11px;margin-top:18px;margin-left:5px">等{{count}}人围观</view>
+    </view>
+    
+    
+   </view>
+   <view class="right"></view>
+    <view style="clear:left" ></view>
+    <view style="height:10px;background:#eee;width:100%;"></view>
+    <view class="left" style="height:160px"></view>
+    <view class="center">
+       <view style="font-size:12px;margin-left:10px;margin-top:5px">客户服务</view>
+       <view style="height:1px;background:#eee;width:100%;margin-top:5px"></view>
+       <view style="width:25%;float:left" data-id="1" bindtap="tijiao">
+          <image src="{{loginImg1}}" style="width:150rpx;height:150rpx;margin-top:15px"></image>
+          <view style="font-size:12px;margin-left:22px">我是米厂</view>
+       </view>
+       <view style="width:25%;float:left" data-id="2" bindtap="tijiao">
+          <image src="{{loginImg2}}" style="width:150rpx;height:150rpx;margin-top:15px"></image>
+          <view style="font-size:12px;margin-left:16px">我是批发商</view>
+       </view>
+       <view style="width:25%;float:left" data-id="3" bindtap="tijiao">
+          <image src="{{loginImg3}}" style="width:150rpx;height:150rpx;margin-top:15px"></image>
+          <view style="font-size:12px;margin-left:16px">我是品牌商</view>
+       </view>
+       <view style="width:25%;float:left" data-id="4" bindtap="tijiao">
+          <image src="{{loginImg4}}" style="width:150rpx;height:150rpx;margin-top:15px"></image>
+          <view style="font-size:12px;margin-left:22px">投诉建议</view>
+       </view>
+     </view>
+    <view class="right" style="height:160px"></view>
+    <view style="clear:left" ></view>
+    <view style="height:10px;background:#eee;width:100%;"></view>
+
+    <view class="left" style="height:230px"></view>
+     <view class="center">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:200px">  
+          <block wx:for="{{movies}}" wx:for-index="index">  
+            <swiper-item>  
+              <image src="{{item.url}}" class="slide-image" mode="aspectFill" style="height:200px"/>  
+            </swiper-item>  
+          </block>  
+        </swiper>
+     </view>
+    <view class="right" style="height:230px"></view>
+    <view style="clear:left" ></view>
+    <view style="height:10px;background:#eee;width:100%;"></view>
+
+
+    <view class="left" style="height:280px"></view>
+    <view class="center">
+       <view style="font-size:12px;margin-left:10px;margin-top:5px">促销和活动</view>
+       <view style="height:1px;background:#eee;width:100%;margin-top:5px"></view>
+
+       <view class="list" style="margin-top:8px" wx:for="{{articlelist}}" data-id="{{item.id}}" bindtap="detail">
+             <view style="width:25%;float:left">
+              <image src="{{item.img}}" style="width:160rpx;height:130rpx"></image>
+            </view>
+            <view style="width:75%;float:left">
+              <view style="float:left;font-size:13px;margin-top:10px;margin-left:5px;width:100%;">{{item.title}}</view>
+              <view style="float:left;font-size:10px;margin-top:5px;margin-left:5px">{{item.description}}</view>
+            </view>
+            <view style="clear:left" ></view>
+            <view style="height:1px;background:#eee;width:100%;"></view>
+       </view>
+ 
+    
+     </view>
+    <view class="right" style="height:280px"></view>
+    <view style="clear:left" ></view>
+    <view style="height:10px;background:#eee;width:100%;"></view>
+</view>

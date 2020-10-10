@@ -1,0 +1,22 @@
+<image src="{{logoimg}}" style="width:100%;height:260rpx;"></image>
+<view style="width:100%;height:8px;background:#eee;margin-top:-5px"></view>
+<form bindsubmit="formSubmit" bindreset="formReset">  
+<view>
+  <input name="username" style="width:90%;margin-left:8px;margin-top:10px;font-size:14px;" placeholder="你的姓名"></input>
+  <view style="width:100%;height:1px;background:#ccc;margin-top:10px;"></view>
+</view>
+<view>
+  <input name="mobile" style="width:90%;margin-left:8px;margin-top:10px;font-size:14px;" placeholder="请输入手机号"></input>
+  <view style="width:100%;height:1px;background:#ccc;margin-top:10px;"></view>
+</view>
+<view style="display:{{show}}">
+  <input name='content' style="width:90%;margin-left:8px;margin-top:10px;font-size:14px;" placeholder="请简述你的问题(10字内)"></input>
+  <view style="width:100%;height:1px;background:#ccc;margin-top:10px;"></view>
+</view>
+
+<view style="text-align:center;background:#eee;padding-top:10px;">
+    <view style="font-size:14px;">为了保障你的权益，你的所有信息不回泄露给他人</view>
+    <button formType="submit" style="width:90%;margin-top:15px;background:#DC0604;color:#fff;font-size:15px;line-height:45px">预约客服人员</button>
+    <view style="background:#eee;width:100%;height:230px"></view>
+</view>
+</form> 
